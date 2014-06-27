@@ -1,0 +1,10 @@
+<ul class="nav nav-list">
+    {% if page_list %}
+        {% for page in page_list %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+    {% else %}
+        <li>No pages at present. </li>
+    {% endif %}
+</ul>
+
